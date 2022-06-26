@@ -1,8 +1,14 @@
 import random
 
+def get_winner(computer,player):
+    if computer == player:
+        print('it\'s a tie')
+    elif (computer == 'rock' and player == 'scissors') or (computer == 'paper' and player == 'rock') or (computer == 'scissors' and player == 'paper'):
+        print('computer won')
+    else:
+        print('player won congratualtions')
+    
 
-    
-    
 
 def get_computer_choice():
     choices = ["rock","paper","scissors"]
@@ -17,6 +23,7 @@ def get_user_choice():
 
 get_computer_choice()
 get_user_choice()
+
 
 
     
