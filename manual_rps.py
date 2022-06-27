@@ -17,32 +17,28 @@ def get_user_choice():
 def get_winner(computer,player):
     if computer == player:
         print("it's a tie")
-    elif computer == "rock":
-        if player == 'scissors':
-            print("Computer won")
-        if player == "paper":
-            print("player won")
-    elif computer == "paper":
-        if player == 'rock':
-            print("Computer won")
-        if player == 'scissors':
-            print("player won")
-    elif computer == "scissors":
-        if player == 'paper':
-            print("Computer won")
-        if player == 'rock':
-            print("player won")
-    
+    elif computer == "rock" and player == 'scissors':
+        print("Computer won")
+    elif computer == "rock" and player == 'paper':
+        print("PLayer won")
+    elif computer == "paper" and player == 'scissors':
+        print("Player won")
+    elif computer == "paper" and player == 'rock':
+        print("Computer won")
+    elif computer == "scissors" and player == 'paper':
+        print("Computer won")
+    elif computer == "scissors" and player == 'rock':
+        print("Player won")
     else:
-        print('big error')
+        print('Try again')
     return 
         
 
 
 def play():
-    comp_choice = get_computer_choice()
-    user_choice = get_user_choice()
-    winner = get_winner(user_choice, comp_choice)
+    computer = get_computer_choice()
+    player = get_user_choice()
+    winner = get_winner(computer,player)
     return
 
 play()
