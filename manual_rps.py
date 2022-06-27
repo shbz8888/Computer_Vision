@@ -1,4 +1,6 @@
 import random
+
+
    
 def get_computer_choice():
     choices = ["rock","paper","scissors"]
@@ -35,11 +37,15 @@ def get_winner(computer,player):
         print('big error')
     return 
         
-comp_choice = get_computer_choice()
-user_choice = get_user_choice()
-get_winner(comp_choice, user_choice)
 
 
+def play():
+    comp_choice = get_computer_choice()
+    user_choice = get_user_choice()
+    winner = get_winner(user_choice, comp_choice)
+    return
+
+play()
     
 
     
