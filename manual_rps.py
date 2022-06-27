@@ -1,25 +1,4 @@
 import random
-def get_winner(computer,player):
-    if computer == player:
-        print("it'\s a tie")
-    elif computer == 'rock':
-        if player == 'scissors':
-            return print("Computer won")
-        else:
-            return print("Player won")
-    elif computer == 'paper':
-        if player == 'rock':
-            return  print("Computer won")
-        else:
-            return print("Player won")
-    elif computer == 'scissors':
-        if player == 'paper':
-            return  print("Computer won")
-        else:
-            return print("Player won")
-    else:
-        print('could not be processed')
-    return 
    
 def get_computer_choice():
     choices = ["rock","paper","scissors"]
@@ -33,10 +12,32 @@ def get_user_choice():
     player = input('rock, paper, or scissors?: ').lower()
     return player
 
+def get_winner(computer,player):
+    if computer == player:
+        print("it'\s a tie")
+    elif computer == "rock":
+        if player == 'scissors':
+            print("Computer won")
+        if player == "paper":
+            print("player won")
+    elif computer == "paper":
+        if player == 'rock':
+            print("Computer won")
+        if player == 'scissors':
+            print("player won")
+    elif computer == "scissors":
+        if player == 'paper':
+            print("Computer won")
+        if player == 'rock':
+            print("player won")
+    
+    else:
+        print('big error')
+    return 
         
-get_computer_choice()
-get_user_choice()
-get_winner(get_computer_choice(),get_user_choice())
+comp_choice = get_computer_choice()
+user_choice = get_user_choice()
+get_winner(comp_choice, user_choice)
 
 
     
