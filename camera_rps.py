@@ -34,12 +34,15 @@ def get_prediction():
         cap.release()
     # Destroy all the windows
     cv2.destroyAllWindows()
+    return prediction
     
-    if prediction[0] > 0.6:
+    
+def Find_user_choice(prediction):
+    if prediction[0] > 6e-01 and prediction[1,3] < 6e-01 :
         player = 'rock'
-    elif prediction[1] > 0.6:
+    elif prediction[1] > 6e-01 and prediction[0] < 6e-01 and prediction[2,3] < 6e-01:
         player = 'paper'
-    elif prediction[2] > 0.6:
+    elif prediction[2] > 6e-01 and prediction[0,1] < 6e-01 and prediction[3] < 6e-01:
         player = 'scissors'
     else: player = 'nothing'
     return player
@@ -68,7 +71,8 @@ def get_winner(computer,player):
 # A play function to run the game
 def play():
     computer = get_computer_choice()
-    player = get_prediction()
+    prediction = get_prediction()
+    player = Find_user_choice(prediction)
     winner = get_winner(computer,player)
     return
 #  The play function is called
