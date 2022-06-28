@@ -45,25 +45,25 @@ Milestone 3
 
 * In milestone 3 a manual version of the rock, paper, scissors game was created where the computer picked an option and then the user was asked to input an option before a winner was selected.
 
-code:
+code for game:
 ```python
 import random
 
 
-   
+# computer randomly selects a choice   
 def get_computer_choice():
     choices = ["rock","paper","scissors"]
     computer = random.choice(choices)
     print(f'computer choice is {computer}')
     return computer
-# computer randomly selects a choice  
 
 
+# user is asked to input a choice  
 def get_user_choice():
     player = input('rock, paper, or scissors?: ').lower()
     return player
-# user is asked to input a choice  
-
+ 
+# The winner is decided after the computer and player have made their decisions   
 def get_winner(computer,player):
     if computer == player:
         print("it's a tie")
@@ -82,15 +82,14 @@ def get_winner(computer,player):
     else:
         print('Try again')
     return 
-# The winner is decided after the computer and player have made their decisions   
+ 
 
-
+# A play function to run the game
 def play():
     computer = get_computer_choice()
     player = get_user_choice()
     winner = get_winner(computer,player)
     return
-# A play function to run the game
-play()
 #  The play function is called
+play()
 ```
