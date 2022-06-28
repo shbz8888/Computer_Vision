@@ -7,12 +7,13 @@ def get_computer_choice():
     computer = random.choice(choices)
     print(f'computer choice is {computer}')
     return computer
-    ##%    
+# computer randomly selects a choice  
 
 
 def get_user_choice():
     player = input('rock, paper, or scissors?: ').lower()
     return player
+# user is asked to input a choice  
 
 def get_winner(computer,player):
     if computer == player:
@@ -20,7 +21,7 @@ def get_winner(computer,player):
     elif computer == "rock" and player == 'scissors':
         print("Computer won")
     elif computer == "rock" and player == 'paper':
-        print("PLayer won")
+        print("Player won")
     elif computer == "paper" and player == 'scissors':
         print("Player won")
     elif computer == "paper" and player == 'rock':
@@ -32,7 +33,7 @@ def get_winner(computer,player):
     else:
         print('Try again')
     return 
-        
+# The winner is decided after the computer and player have made their decisions   
 
 
 def play():
@@ -40,18 +41,6 @@ def play():
     player = get_user_choice()
     winner = get_winner(computer,player)
     return
-
+# A play function to run the game
 play()
-    
-
-    
- # #
-
- #def play_game()
-
-
- #play_again = input("Play again? (yes/no): ").lower()
-
- #if play_again != "yes":
-     #break
-
+#  The play function is called
