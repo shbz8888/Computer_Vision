@@ -38,11 +38,11 @@ def get_prediction():
     
     
 def Find_user_choice(prediction):
-    if prediction[0] > 6e-01 and prediction[1,3] < 6e-01 :
+    if (prediction[0][0] > 6e-01) and (prediction[0][1] < 6e-01) and (prediction[0][2] < 6e-01) and (prediction[0][3] < 6e-01):
         player = 'rock'
-    elif prediction[1] > 6e-01 and prediction[0] < 6e-01 and prediction[2,3] < 6e-01:
+    elif (prediction[0][1] > 6e-01) and (prediction[0][0] < 6e-01) and (prediction[0][2] < 6e-01) and (prediction[0][3] < 6e-01):
         player = 'paper'
-    elif prediction[2] > 6e-01 and prediction[0,1] < 6e-01 and prediction[3] < 6e-01:
+    elif (prediction[0][2] > 6e-01) and (prediction[0][0] < 6e-01) and (prediction[0][1] < 6e-01) and (prediction[0][3] < 6e-01):
         player = 'scissors'
     else: player = 'nothing'
     return player
