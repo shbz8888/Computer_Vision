@@ -21,6 +21,16 @@ while True:
 
     print(10 - elapsed)
     print(prediction)
+    if 7 <= 10 - elapsed <=8:
+        print('get ready!')
+    if 6 <= 10 -elapsed <=7:
+         print('3!')
+    if 5<= 10 -elapsed <=6:
+         print('2!')
+    if 4<= 10 -elapsed <=5:
+         print('1!')
+    if 10- elapsed <= 4:
+        print('show your hand')
     if 10 - elapsed <=2:
         break
     if cv2.waitKey(1) & 0xFF == ord('q'):
