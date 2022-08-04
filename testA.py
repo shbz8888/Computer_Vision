@@ -17,7 +17,7 @@ def turn_on_cam():
         data[0] = normalized_image
         prediction = model.predict(data)
         cv2.imshow('frame', frame)
-        # Press q to close the window
+       
         elapsed = time.time()-t_0
 
         print(10 - elapsed)
@@ -37,9 +37,9 @@ def turn_on_cam():
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
                 
-    # After the loop release the cap object
+   
     cap.release()
-    # Destroy all the windows
+   
     cv2.destroyAllWindows()
     return prediction 
 
@@ -53,21 +53,18 @@ def Find_user_choice(prediction):
     else: player = 'nothing'
     return player
  
-# computer randomly selects a choice   
+
 def get_computer_choice():
     choices = ["rock","paper","scissors"]
     computer = random.choice(choices)
     print(f'computer choice is {computer}')
     return computer
-# user is asked to input a choice  
+
 def get_user_choice():
     player = input('rock, paper, or scissors?: ').lower()
     return player
  
-player_wins = 0
-computer_wins = 0
-ties = 0
-# The winner is decided after the computer and player have made their decisions   
+
 def get_winner(computer,player):
     if computer == player:
         print("it's a tie")
@@ -95,14 +92,14 @@ def get_winner(computer,player):
     return 
  
 
-# A play function to run the game
+
 def play():
     prediction = turn_on_cam()
     computer = get_computer_choice()
     player = Find_user_choice(prediction)
     winner = get_winner(computer,player)
 
-#  The play function is called
+
 
 def play_best_of():
     player_wins = 0
@@ -117,10 +114,6 @@ def play_best_of():
         elif winner == 'Wcomputer':
             computer_wins += 1
             print(f'computer score is : {computer_wins}')
-        # else:
-        #      winner == 'tie'
-        #      ties += 1
-        #      print(f'ties is : {ties}')
         rounds += 1
     if player_wins == computer_wins:
         print('The game is a draw')
@@ -130,14 +123,7 @@ def play_best_of():
         print('You lost')
 
                                                               
-    # if player_wins == 3:
-    #     print('Wow you won three rounds already')
-    # elif computer_wins == 3:
-    #     print('Wow computer three rounds, better luck next time dude')
-    # elif ties == 3:
-    #     print('oh thats weird you tied thrice')
-    # else:
-    #     print('oh no')
+   
     return
 
 
