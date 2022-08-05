@@ -18,10 +18,9 @@ def turn_on_cam():
         prediction = model.predict(data)
         cv2.imshow('frame', frame)
        
+        #creates a countdown in terminal
         elapsed = time.time()-t_0
-
-        print(10 - elapsed)
-        print(prediction)
+        
         if 7 <= 10 - elapsed <=8:
             print('get ready!')
         if 6 <= 10 -elapsed <=7:
@@ -30,8 +29,10 @@ def turn_on_cam():
             print('2!')
         if 4<= 10 -elapsed <=5:
             print('1!')
+            print(prediction)
         if 10- elapsed <= 4:
             print('show your hand')
+            print(prediction)
         if 10 - elapsed <=2:
             break
         if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -51,6 +52,7 @@ def Find_user_choice(prediction):
     elif (prediction[0][2] > 6e-01) and (prediction[0][0] < 6e-01) and (prediction[0][1] < 6e-01) and (prediction[0][3] < 6e-01):
         player = 'scissors'
     else: player = 'nothing'
+    print(f'your choice is {player}' )
     return player
  
 
@@ -95,8 +97,8 @@ def get_winner(computer,player):
 
 def play():
     prediction = turn_on_cam()
-    computer = get_computer_choice()
     player = Find_user_choice(prediction)
+    computer = get_computer_choice()
     winner = get_winner(computer,player)
 
 
@@ -121,9 +123,6 @@ def play_best_of():
         print('Congrats ')
     else:
         print('You lost')
-
-                                                              
-   
     return
 
 

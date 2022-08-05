@@ -139,4 +139,43 @@ def turn_on_cam():
 ```
 * The countdown feature prints a countdown on the terminal before eventually telling the user to 'show your hand,' the user input is then taken 
 * Once the countdown reaches 1 an array is printed which shows the probability of the user's sign being either a rock, paper, scissors or nothing
-![](Images/Screenshot_1.png)    ![](Images/Screenshot_2.png)
+![](Images/Screenshot_3.png)   
+* The user choice is then determined using a fucntion which reads the array, within the array the values are rock, paper, scissors and nothing respectively
+```python
+def Find_user_choice(prediction):
+    if (prediction[0][0] > 6e-01) and (prediction[0][1] < 6e-01) and (prediction[0][2] < 6e-01) and (prediction[0][3] < 6e-01):
+        player = 'rock'
+    elif (prediction[0][1] > 6e-01) and (prediction[0][0] < 6e-01) and (prediction[0][2] < 6e-01) and (prediction[0][3] < 6e-01):
+        player = 'paper'
+    elif (prediction[0][2] > 6e-01) and (prediction[0][0] < 6e-01) and (prediction[0][1] < 6e-01) and (prediction[0][3] < 6e-01):
+        player = 'scissors'
+    else: player = 'nothing'
+    print(f'your choice is {player}' )
+    return player
+```
+* The function simply reads wich value is higher than 0.6 and then assigns accordingly
+* The winner is determined using simple if,elif,else statements with the computer choice being randomly generated.
+* A total of 4 rounds were implemeted using a while loop where 1 is consistently added to a variable until it reaches 4 at which point the game ends and a winner is declared
+```python
+def play_best_of():
+    player_wins = 0
+    computer_wins = 0
+    ties = 0
+    rounds = 0
+    while rounds < 4:
+        winner = play()
+        if winner == 'Wplayer':
+            player_wins += 1
+            print(f'player score is : {player_wins}')
+        elif winner == 'Wcomputer':
+            computer_wins += 1
+            print(f'computer score is : {computer_wins}')
+        rounds += 1
+    if player_wins == computer_wins:
+        print('The game is a draw')
+    elif player_wins > computer_wins:
+        print('Congrats ')
+    else:
+        print('You lost')
+    return
+```
