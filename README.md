@@ -1,4 +1,5 @@
 # Computer_Vision
+Hello welcome to my project README file :blush: please have a look
 A program to play Rock Paper scissors with your computer.
 
 Technology utilised: python, **tensorflow**, google teachable machine, virtual environment creation, cv2 video capture, Git ... (please check Cam_RPS.py for finished game, details in Milestone 4)
@@ -6,8 +7,9 @@ Technology utilised: python, **tensorflow**, google teachable machine, virtual e
 ## Milestone 1:
 
 * Using google's teachable machine a machine learing model was created that uses the camera to recognize when then user is holding up a rock, paper or scissors.
-* In order to inicrease the accuracy of the model upto 500 images were uploaded to each category.
+* In order to increase the accuracy of the model upto 500 images were uploaded to each category.
 * google's teachable machine was chosen due to it being intuitive and easy to use
+* This model was saved as keras_model.h5
 
 ## Milesone 2:
 
@@ -18,6 +20,7 @@ Technology utilised: python, **tensorflow**, google teachable machine, virtual e
 The code used to run the mode:
 ```python
 import cv2
+#Model is imported
 from keras.models import load_model
 import numpy as np
 model = load_model('keras_model.h5')
