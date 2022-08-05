@@ -9,7 +9,7 @@ def get_computer_choice():
     return computer
 
 
-# user is asked to input a choice  
+# user is asked to input their choice  
 def get_user_choice():
     player = input('rock, paper, or scissors?: ').lower()
     return player
