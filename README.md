@@ -15,7 +15,10 @@ Technology utilised: python, **tensorflow**, google teachable machine, virtual e
 ## Milesone 2:
 
 * a new virtual environment was created using visual studio code, this was done so that the computer could run the machine learning model
-* after the model created in milestone 1 was downloaded and input into the right folder `python CVRPS.py` was entered into the terminal to run the model
+* **opencv-python, tensorflow, and ipykernel were installed**
+* `conda create -n tensorflow-env python=3.9` was used to create the environment
+* It was then activated using `conda activate tensorflow-env`
+* After the model created in milestone 1 was downloaded and input into the right folder `python CVRPS.py` was entered into the terminal to run the model
 * The model accessed the webcam and output a vector with 4 values each corresponding with the probability that the user is holding up either a rock, paper, scissors or nothing
 
 The code used to run the mode:
