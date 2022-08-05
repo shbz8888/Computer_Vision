@@ -1,5 +1,5 @@
 <h1 align="center">Computer_Vision</h1>
-Hello welcome to my README file :blush: please have a look.
+<p align="center">Hello welcome to my README file :blush: please have a look.</p>
 
 I have created a program to play Rock Paper scissors with your computer using your webcam.
 
