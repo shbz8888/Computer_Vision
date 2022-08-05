@@ -1,5 +1,5 @@
 # Computer_Vision
-## Hello welcome to my project README file :blush: please have a look
+Hello welcome to my README file :blush: please have a look
 
 A program to play Rock Paper scissors with your computer.
 
