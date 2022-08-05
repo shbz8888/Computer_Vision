@@ -1,7 +1,7 @@
 # Computer_Vision
 A program to play Rock Paper scissors with your computer.
 
-Technology utilised: (python, **tensorflow**, google teachable machine, virtual environment creation, cv2 video capture, Git ...)
+Technology utilised: python, **tensorflow**, google teachable machine, virtual environment creation, cv2 video capture, Git ... (please check Cam_RPS.py for finished game, details in Milestone 4)
 
 ## Milestone 1:
 
@@ -45,7 +45,7 @@ cv2.destroyAllWindows()
 
 ## Milestone 3:
 
-* In milestone 3 a manual version of the rock, paper, scissors game was created where the computer picked an option and then the user was asked to input an option before a winner was selected.
+* In milestone 3 a manual version of the rock, paper, scissors game (manual_rps.py) was created where the computer picked an option and then the user was asked to input an option before a winner was selected.
 
 code for game:
 ```python
@@ -96,6 +96,7 @@ def play():
 play()
 ```
 ## Milestone 4:
+* The full **final code can be found in Cam_RPS.py**
 * The previous manual version of RPS was integrated into a new code where the camera was used to ascertain the user's choice, this was done using **tensorflow** and the model from google's teachable machine in a virtual environment
 * The code from milestone 2 was created into a new function in order to turn on the camera and a countdown was added:
 ```python
