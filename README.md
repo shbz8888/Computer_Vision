@@ -1,6 +1,6 @@
 # Computer_Vision
 A program to play Rock Paper scissors with your computer
-Technology utilised: (python, tensorflow, google teachable machine cv2 video capture)
+Technology utilised: (python, **tensorflow**, google teachable machine, virtual environment creation, cv2 video capture)
 
 ## Milestone 1:
 
