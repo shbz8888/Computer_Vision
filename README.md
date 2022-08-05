@@ -1,5 +1,6 @@
 # Computer_Vision
-Hello welcome to my project README file :blush: please have a look
+## Hello welcome to my project README file :blush: please have a look
+
 A program to play Rock Paper scissors with your computer.
 
 Technology utilised: python, **tensorflow**, google teachable machine, virtual environment creation, cv2 video capture, Git ... (please check Cam_RPS.py for finished game, details in Milestone 4)
