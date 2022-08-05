@@ -1,4 +1,4 @@
-<title align="center">Computer_Vision</title>
+<h1 align="center" style="font-size:50px;">Computer_Vision</h1>
 <p align="center">Hello welcome to my README file :blush: please have a look.</p>
 
 I have created a program to play Rock Paper scissors with your computer using your webcam.
