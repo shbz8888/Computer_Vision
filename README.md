@@ -94,7 +94,7 @@ def play():
 play()
 ```
 Milestone 4:
-* The previous manual version of RPS was integrated into a new code where the camera was used to ascertain the user's choice, this was done using tensorflow and the model from google's teachable machine in a virtual environment
+* The previous manual version of RPS was integrated into a new code where the camera was used to ascertain the user's choice, this was done using *tensorflow* and the model from google's teachable machine in a virtual environment
 * The code from milestone 2 was created into a new function in order to turn on the camera and a countdown was added:
 ```python
 def turn_on_cam():
