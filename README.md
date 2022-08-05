@@ -139,6 +139,7 @@ def turn_on_cam():
 ```
 * The countdown feature prints a countdown on the terminal before eventually telling the user to 'show your hand,' the user input is then taken 
 * Once the countdown reaches 1 an array is printed which shows the probability of the user's sign being either a rock, paper, scissors or nothing
+
 ![](Images/Screenshot_3.png)   
 * The user choice is then determined using a fucntion which reads the array, within the array the values are rock, paper, scissors and nothing respectively
 ```python
