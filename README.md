@@ -1,7 +1,7 @@
 <h1 align="center">Computer_Vision</h1>
 Hello welcome to my README file :blush: please have a look.
 
-A program to play Rock Paper scissors with your computer.
+I have created a program to play Rock Paper scissors with your computer using your webcam.
 
 Technology utilised: python, **tensorflow**, google teachable machine, virtual environment creation, cv2 video capture, Git ... (please check Cam_RPS.py for finished game, details in Milestone 4).
 
