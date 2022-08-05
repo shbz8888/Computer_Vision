@@ -18,7 +18,7 @@ def turn_on_cam():
         prediction = model.predict(data)
         cv2.imshow('frame', frame)
        
-        #creates a countdown in terminal
+        #creates a countdown in the terminal
         elapsed = time.time()-t_0
         
         if 7 <= 10 - elapsed <=8:
