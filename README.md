@@ -182,4 +182,4 @@ def play_best_of():
         print('You lost')
     return
 ```
-<h1 align="center"># Thank you for reading :smile: :blush:</h1>
+<h1 align="center">Thank you for reading :smile: :blush:</h1>
