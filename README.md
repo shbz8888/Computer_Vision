@@ -1,15 +1,15 @@
 # Computer_Vision
 A program to play Rock Paper scissors with your computer
 
-Milestone 1
+## Milestone 1:
 
 * Using google's teachable machine a machine learing model was created that uses the camera to recognize when then user is holding up a rock, paper or scissors.
 * In order to inicrease the accuracy of the model upto 500 images were uploaded to each category.
 * google's teachable machine was chosen due to it being intuitive and easy to use
 
-Milesone 2
+## Milesone 2:
 
-* a new virtual environment was created using visual stdio code, this was done so that the computer could run the machine learning model
+* a new virtual environment was created using visual studio code, this was done so that the computer could run the machine learning model
 * after the model created in milestone 1 was downloaded and input into the right folder `python CVRPS.py` was entered into the terminal to run the model
 * The model accessed the webcam and output a vector with 4 values each corresponding with the probability that the user is holding up either a rock, paper, scissors or nothing
 
@@ -41,7 +41,7 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-Milestone 3
+## Milestone 3:
 
 * In milestone 3 a manual version of the rock, paper, scissors game was created where the computer picked an option and then the user was asked to input an option before a winner was selected.
 
@@ -93,8 +93,8 @@ def play():
 #  The play function is called
 play()
 ```
-Milestone 4:
-* The previous manual version of RPS was integrated into a new code where the camera was used to ascertain the user's choice, this was done using *tensorflow* and the model from google's teachable machine in a virtual environment
+## Milestone 4:
+* The previous manual version of RPS was integrated into a new code where the camera was used to ascertain the user's choice, this was done using **tensorflow** and the model from google's teachable machine in a virtual environment
 * The code from milestone 2 was created into a new function in order to turn on the camera and a countdown was added:
 ```python
 def turn_on_cam():
