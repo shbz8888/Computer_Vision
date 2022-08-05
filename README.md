@@ -1,4 +1,5 @@
 # Computer_Vision
+<h1 align="center">Computer_Vision</h1>
 Hello welcome to my README file :blush: please have a look.
 
 A program to play Rock Paper scissors with your computer.
